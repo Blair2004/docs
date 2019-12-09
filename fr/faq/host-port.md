@@ -5,9 +5,9 @@ description: Comment modifier l'hôte et le port avec Nuxt.js?
 
 Par défault, Le serveur de développement Nuxt est `localhost` (uniquement accessible depuis la machine hôte).
 
-L'hôte `0.0.0.0` est conçu pour indiquer à Nuxt pour rendre disponible l'addresse de l'hôte, accessible depuis des connexions _extérieures_ à la machine hôte (e.g. LAN).
+L'hôte `0.0.0.0` est conçu pour indiquer pour rendre disponible l'addresse du server Nuxt accessible depuis des connexions _extérieures_ à la machine hôte (e.g. LAN).
 
-Vous pouvez configurer les variables de connexion de plusieurs façons. Ces derniers sont affichés **de la plus grande priorité à la plus petite**.
+Vous pouvez configurer les variables de connexion de plusieurs façons. Ces dernières sont affichées **de la plus grande priorité à la plus petite**.
 
 > **Remarque:** Si au `port` est assigné une chaîne de charactère `'0'` (et non `0`, qui est incorrect), un port aléatoire sera attribué à votre application Nuxt.
 
@@ -25,7 +25,7 @@ Ou
 
 ## Configurer dans le fichier `nuxt.config.js`:
 
-A l'intérieure de votre fichier `nuxt.config.js`:
+A l'intérieur de votre fichier `nuxt.config.js`:
 
 ```js
 export default {
@@ -48,7 +48,7 @@ Similaire à HOST et PORT, mais plus spécifique lorsque vous avez besoin de les
 }
 ```
 
-**Remarque**: pour une meilleur compatibilité d'un développement multi-platforme, vous pouvez utiliser [cross-env](https://www.npmjs.com/package/cross-env) package.
+**Remarque**: pour une meilleure compatibilité dans un développement multi-platforme, vous pouvez utiliser [cross-env](https://www.npmjs.com/package/cross-env) package.
 
 Installation:
 
